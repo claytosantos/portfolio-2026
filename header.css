@@ -1,0 +1,215 @@
+/* ============================================================================
+   HEADER & HERO SECTION
+   ============================================================================ */
+
+header {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  padding: var(--spacing-3xl) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-text);
+  background-image: url('thumbs/Background_Intro.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* Hero overlay effect (opcional para melhor contraste) */
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(22, 24, 29, 0.3);
+  z-index: 1;
+}
+
+header > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================================================================
+   INTRO SECTION
+   ============================================================================ */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+  max-width: 700px;
+}
+
+.intro img {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  box-shadow: var(--shadow-lg);
+  border: 3px solid var(--color-primary);
+  animation: slideUp 0.8s ease-out;
+}
+
+.intro p {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.intro .name {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.intro h1 {
+  color: var(--color-accent);
+  font-size: var(--text-lg);
+  margin: 0;
+  animation: fadeInDown var(--transition-slow);
+}
+
+.intro h2 {
+  color: var(--color-text-light);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  line-height: var(--line-height-relaxed);
+  margin: var(--spacing-md) 0 0 0;
+  animation: fadeInUp var(--transition-slow);
+}
+
+/* ============================================================================
+   TECHNOLOGIES SHOWCASE
+   ============================================================================ */
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-2xl) 0;
+  width: 100%;
+}
+
+.tecnologias div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  
+  width: 140px;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-md);
+  
+  transition: transform var(--transition-base), 
+              box-shadow var(--transition-base),
+              background-color var(--transition-base);
+}
+
+.tecnologias div:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  background-color: rgba(227, 100, 110, 0.1);
+}
+
+.tecnologias img {
+  width: 40px;
+  height: 40px;
+}
+
+/* ============================================================================
+   DECORATIVE VECTOR
+   ============================================================================ */
+
+.vector {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-2xl) 0 0 0;
+  width: 100%;
+}
+
+.vector img {
+  width: 50px;
+  height: 50px;
+  transition: transform var(--transition-base);
+}
+
+.vector img:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
+
+@media (max-width: 768px) {
+  header {
+    min-height: 500px;
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .intro img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .intro h1 {
+    font-size: var(--text-md);
+  }
+
+  .intro h2 {
+    font-size: var(--text-sm);
+  }
+
+  .tecnologias {
+    gap: var(--spacing-md);
+  }
+
+  .tecnologias div {
+    width: 120px;
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    min-height: 400px;
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+
+  .intro img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .intro h1 {
+    font-size: var(--text-base);
+  }
+
+  .intro h2 {
+    font-size: var(--text-xs);
+  }
+
+  .intro p {
+    font-size: var(--text-xs);
+  }
+
+  .tecnologias div {
+    width: 100px;
+    padding: var(--spacing-sm);
+  }
+
+  .tecnologias img {
+    width: 32px;
+    height: 32px;
+  }
+}

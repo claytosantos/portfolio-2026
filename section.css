@@ -1,0 +1,271 @@
+/* ============================================================================
+   MAIN SECTIONS
+   ============================================================================ */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+  text-align: center;
+  padding: var(--spacing-3xl) var(--spacing-md);
+  background-color: var(--color-surface);
+}
+
+.section .title {
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.section .subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
+  max-width: 600px;
+  margin: 0 0 var(--spacing-2xl) 0;
+  font-weight: 400;
+  line-height: var(--line-height-relaxed);
+}
+
+/* ============================================================================
+   PROJECTS GRID
+   ============================================================================ */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ============================================================================
+   CONTACT / SERVICES SECTION
+   ============================================================================ */
+
+.contact {
+  position: relative;
+  width: 100%;
+  padding: var(--spacing-3xl) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  background-image: url('thumbs/Background_Services.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Overlay para melhor contraste */
+.contact::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(22, 24, 29, 0.4);
+  z-index: 1;
+}
+
+.contact > * {
+  position: relative;
+  z-index: 2;
+}
+
+.contact .P {
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-sm) 0;
+  font-weight: 700;
+}
+
+.contact h2 {
+  font-size: var(--text-md);
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-2xl) 0;
+  max-width: 600px;
+}
+
+/* ============================================================================
+   SERVICES GRID
+   ============================================================================ */
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  width: 100%;
+  max-width: 1100px;
+  margin: 0;
+}
+
+.servicos-grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  
+  padding: var(--spacing-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-align: center;
+  color: var(--color-text);
+  background-color: rgba(22, 24, 29, 0.8);
+  box-shadow: var(--shadow-md);
+  
+  transition: all var(--transition-base);
+}
+
+.servicos-grid article:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
+  background-color: rgba(227, 100, 110, 0.05);
+}
+
+.servicos-grid article img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.servicos-grid article h3 {
+  color: var(--color-primary);
+  margin: 0;
+  font-size: var(--text-base);
+}
+
+.servicos-grid article p {
+  color: var(--color-text-light);
+  margin: 0;
+  font-size: var(--text-xs);
+  font-weight: 400;
+}
+
+/* ============================================================================
+   SOCIAL MEDIA GRID
+   ============================================================================ */
+
+.socialmedia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--spacing-lg);
+  width: 100%;
+  max-width: 500px;
+  margin: var(--spacing-2xl) 0 0 0;
+}
+
+.socialmedia-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  background-color: rgba(255, 255, 255, 0.05);
+  
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.socialmedia-item:hover {
+  transform: scale(1.08);
+  background-color: rgba(227, 100, 110, 0.1);
+  color: var(--color-primary);
+}
+
+.socialmedia-item img {
+  width: 40px;
+  height: 40px;
+  transition: transform var(--transition-base);
+}
+
+.socialmedia-item:hover img {
+  transform: scale(1.15);
+}
+
+.socialmedia-item span {
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .contact {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .contact .P {
+    font-size: var(--text-md);
+  }
+
+  .contact h2 {
+    font-size: var(--text-base);
+  }
+
+  .servicos-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .servicos-grid article {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+
+  .section .title {
+    font-size: var(--text-md);
+  }
+
+  .section .subtitle {
+    font-size: var(--text-xs);
+    max-width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+
+  .contact .P {
+    font-size: var(--text-base);
+  }
+
+  .contact h2 {
+    font-size: var(--text-sm);
+  }
+
+  .servicos-grid article {
+    padding: var(--spacing-md);
+  }
+
+  .socialmedia-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+}

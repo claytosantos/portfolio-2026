@@ -1,0 +1,165 @@
+/* ============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================ */
+
+/* Mobile First Approach - Media Queries para Tablets e Desktop */
+
+/* ============================================================================
+   TABLET (768px and up)
+   ============================================================================ */
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+
+  .section {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+  }
+}
+
+/* ============================================================================
+   DESKTOP (1024px and up)
+   ============================================================================ */
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 var(--spacing-xl);
+  }
+
+  .section {
+    padding: var(--spacing-3xl) var(--spacing-xl);
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .servicos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .socialmedia-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ============================================================================
+   LARGE DESKTOP (1440px and up)
+   ============================================================================ */
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .section {
+    padding: var(--spacing-3xl) auto;
+  }
+}
+
+/* ============================================================================
+   MOBILE OPTIMIZATIONS (Extra Small - below 480px)
+   ============================================================================ */
+
+@media (max-width: 479px) {
+  :root {
+    /* Ajustar tamanhos de fonte para móvel */
+    --text-lg: 28px;
+    --text-md: 20px;
+    --text-sm: 14px;
+  }
+
+  body {
+    font-size: var(--text-xs);
+  }
+
+  /* Reduzir padding/margin em telas pequenas */
+  .section {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .contact {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  header {
+    min-height: 400px;
+  }
+
+  /* Garantir que imagens não extrapolam */
+  img {
+    max-width: 100%;
+  }
+}
+
+/* ============================================================================
+   TABLETS (480px - 767px)
+   ============================================================================ */
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .servicos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .socialmedia-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================================================
+   ORIENTAÇÃO (Landscape/Portrait)
+   ============================================================================ */
+
+@media (orientation: landscape) and (max-height: 600px) {
+  header {
+    min-height: 500px;
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .intro img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* ============================================================================
+   ACESSIBILIDADE - Preferência por Movimento Reduzido
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================================
+   HIGH DPI / RETINA DISPLAYS
+   ============================================================================ */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Otimizações para telas de alta densidade */
+  img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+/* ============================================================================
+   DARK MODE (Não necessário se já implementado, mas deixar como referência)
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  /* Já implementado via variáveis CSS no global.css */
+  /* Manter padrão escuro atual */
+}

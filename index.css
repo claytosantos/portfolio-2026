@@ -1,0 +1,17 @@
+/* ============================================================================
+   STYLESHEET IMPORTS
+   ============================================================================ */
+
+/* Base: Design tokens e reset */
+@import url(global.css);
+
+/* Layout: Header e seções principais */
+@import url(header.css);
+@import url(section.css);
+
+/* Components: Cards e footer */
+@import url(cards.css);
+@import url(footer.css);
+
+/* Responsive: Media queries e otimizações */
+@import url(responsive.css);
