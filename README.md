@@ -1,19 +1,19 @@
-# 📱 Portfólio - Felipe Santos
+#  Portfólio - Felipe Santos
 
 > Portfólio responsivo de desenvolvedor full stack com design moderno e CSS profissional
 
-## 🎯 Sobre o Projeto
+##  Sobre o Projeto
 
 Este é um **portfólio web moderno** criado para apresentar projetos, serviços e facilitar o contato de um desenvolvedor full stack. O site apresenta:
 
-- ✨ **Hero Section** com apresentação pessoal
-- 🛠️ **Showcase de Tecnologias** (HTML, CSS, JavaScript, React, Node.js)
-- 📁 **Galeria de Projetos** com grid responsivo
-- 💼 **Seção de Serviços** (Web, APIs, DevOps)
-- 🔗 **Links para Redes Sociais** (LinkedIn, Instagram, GitHub, Email)
-- 📱 **Design 100% Responsivo** (Mobile, Tablet, Desktop)
+-  **Hero Section** com apresentação pessoal
+-  **Showcase de Tecnologias** (HTML, CSS, JavaScript, React, Node.js)
+-  **Galeria de Projetos** com grid responsivo
+-  **Seção de Serviços** (Web, APIs, DevOps)
+-  **Links para Redes Sociais** (LinkedIn, Instagram, GitHub, Email)
+-  **Design 100% Responsivo** (Mobile, Tablet, Desktop)
 
-## 📚 Origem do Projeto
+##  Origem do Projeto
 
 Este projeto é uma **cópia/implementação** do modelo criado pela **[Rocketseat](https://www.rocketseat.com.br)**, uma plataforma de educação em tecnologia. Realizei uma **refatoração completa do CSS** para melhorias de qualidade e manutenibilidade.
 
@@ -21,7 +21,7 @@ Este projeto é uma **cópia/implementação** do modelo criado pela **[Rocketse
 - **Design e Conceito**: Rocketseat
 - **Refatoração CSS e HTML**: Melhorias de código, documentação e responsividade
 
-## 🚀 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 ### Frontend
 - **HTML5** - Semântica e acessibilidade
@@ -38,7 +38,7 @@ Este projeto é uma **cópia/implementação** do modelo criado pela **[Rocketse
 - **Poppins** - Tipografia principal
 - **Asap, Maven Pro, Inconsolata** - Famílias alternativas
 
-## 📋 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 portfolio/
@@ -54,7 +54,7 @@ portfolio/
 └── README.md               # Este arquivo
 ```
 
-## 🎨 Design System
+##  Design System
 
 ### Paleta de Cores
 ```css
@@ -88,7 +88,7 @@ O projeto segue **Mobile First** com breakpoints otimizados:
 | Desktop | 1024px | 3 colunas |
 | Large | 1440px+ | 3-4 colunas |
 
-## 🔧 Como Usar
+##  Como Usar
 
 ### Instalação
 ```bash
@@ -118,7 +118,7 @@ Acesse em `http://localhost:8000`
 3. **Adicionar projetos** → Duplicar `.card` em `index.html`
 4. **Atualizar links sociais** → Footer em `index.html`
 
-## ✨ Principais Melhorias Realizadas
+##  Principais Melhorias Realizadas
 
 ### 1. **Sistema de Design Tokens**
 - Centralização de cores, espaçamento, tipografia
@@ -151,7 +151,7 @@ Acesse em `http://localhost:8000`
 - Ordem lógica de propriedades
 - Evitar `!important`
 
-## 📖 Documentação
+##  Documentação
 
 Consulte **`GUIA_MANUTENCAO.md`** para:
 - Checklist de manutenção
@@ -160,7 +160,7 @@ Consulte **`GUIA_MANUTENCAO.md`** para:
 - Boas práticas CSS
 - Próximas melhorias sugeridas
 
-## 🐛 Bugs Corrigidos
+##  Bugs Corrigidos
 
 - ❌ `font-weight: 600px` (valor inválido) → ✅ Removido
 - ❌ `darken()` (função SCSS) → ✅ Convertido para CSS puro
@@ -180,7 +180,7 @@ Consulte **`GUIA_MANUTENCAO.md`** para:
 - [ ] Sitemap e robots.txt
 - [ ] Google Analytics
 
-## 🤝 Contribuições
+##  Contribuições
 
 Melhorias são bem-vindas! Para contribuir:
 
@@ -192,7 +192,7 @@ Melhorias são bem-vindas! Para contribuir:
 5. Abra um Pull Request
 ```
 
-## 📝 Licença
+##  Licença
 
 Este projeto é **inspirado no trabalho da Rocketseat** e disponibilizado para fins educacionais e pessoais.
 
@@ -201,19 +201,19 @@ Este projeto é **inspirado no trabalho da Rocketseat** e disponibilizado para f
 - Refatoração CSS: Melhorias técnicas e documentação
 
 **Você é livre para:**
-- ✅ Usar como template pessoal
-- ✅ Estudar e aprender
-- ✅ Modificar e personalizar
-- ✅ Compartilhar com créditos à Rocketseat
+- Usar como template pessoal
+-  Estudar e aprender
+-  Modificar e personalizar
+- Compartilhar com créditos à Rocketseat
 
-## 📞 Contato
+##  Contato
 
-- 🔗 **LinkedIn**: [Clayton F Santos](http://linkedin.com/in/claytonfsantos/)
-- 📸 **Instagram**: [@thefall01](https://www.instagram.com/thefall01)
-- 💻 **GitHub**: [@claytosantos](https://github.com/claytosantos/)
-- 📧 **Email**: clayton.fs@outlook.com.br
+-  **LinkedIn**: [Clayton F Santos](http://linkedin.com/in/claytonfsantos/)
+-  **Instagram**: [@thefall01](https://www.instagram.com/thefall01)
+-  **GitHub**: [@claytosantos](https://github.com/claytosantos/)
+-  **Email**: clayton.fs@outlook.com.br
 
-## 📊 Estatísticas do Projeto
+##  Estatísticas do Projeto
 
 | Métrica | Valor |
 |---------|-------|
@@ -227,7 +227,7 @@ Este projeto é **inspirado no trabalho da Rocketseat** e disponibilizado para f
 
 ---
 
-**Criado com ❤️ por Felipe Santos**  
+**Criado por Felipe Santos**  
 Refatoração realizada em 2025
 
-Baseado no modelo educacional da [Rocketseat](https://www.rocketseat.com.br) ✨
+Baseado no modelo educacional da [Rocketseat](https://www.rocketseat.com.br) 🚀
