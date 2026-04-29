@@ -27,7 +27,7 @@
        ==================================================================== -->
   <header>
     <section class="intro">
-      <img src="perfil.png.jpg" alt="Foto de perfil - Felipe Santos">
+      <img src="perfil.jpg" alt="Foto de perfil - Felipe Santos">
       
       <p>Hello World! Meu nome é <span class="name">Felipe Santos</span> e sou</p>
       
@@ -69,8 +69,8 @@
     </nav>
 
     <!-- Decorative Vector -->
-    <div class="vector">
-      <img src="icons/vector.svg" alt="">
+    <div class="vector" id="go-to-contact">
+      <img src="icons/vector.svg" alt="Ir para os contatos">
     </div>
   </header>
 
@@ -170,7 +170,7 @@
   <!-- ====================================================================
        FOOTER
        ==================================================================== -->
-  <footer class="footer">
+  <footer class="footer" id="contato">
     <h2>Gostou do meu trabalho?</h2>
     <p>Entre em contato ou acompanhe minhas redes sociais!</p>
 
@@ -212,5 +212,19 @@
 
     <p class="rodape">© 2025 Felipe Santos — Todos os direitos reservados</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const vectorButton = document.getElementById('go-to-contact');
+      const contactSection = document.getElementById('contato');
+
+      if (vectorButton && contactSection) {
+        vectorButton.style.cursor = 'pointer';
+        vectorButton.addEventListener('click', function() {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
 </body>
 </html>
